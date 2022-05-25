@@ -2,8 +2,8 @@ FROM docker.io/openjdk:17-alpine
 
 WORKDIR /app
 RUN apk add -u git maven && \
-    git clone https://github.com/thaalesalves/simple-jwt-java.git && \
-    mvn clean install -f /app/simple-jwt-java/pom.xml
+    git clone https://github.com/thaalesalves/simple-jwt-kotlin.git && \
+    mvn clean install -f /app/simple-jwt-kotlin/pom.xml
 
 FROM docker.io/openjdk:17-alpine
 WORKDIR /opt
